@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StudyBuddy ML | Baavana Podugu</title>
+<meta name="description" content="Designing and testing a responsible AI study chatbot with design thinking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="index.html">Baavana Podugu<span>.</span></a>
+  <ul>
+    <li><a class="link" href="index.html">Home</a></li>
+    <li><a class="link" href="index.html#about">About</a></li>
+    <li><a class="link active" href="index.html#artifacts">Artifacts</a></li>
+  </ul>
+</div></nav>
+
+<header class="art-hero"><div class="wrap">
+  <div>
+    <span class="eyebrow">Artifact 1 · AI Chatbot</span>
+    <h1>StudyBuddy ML: Designing and Testing a Responsible AI Study Chatbot</h1>
+    <p class="lead">StudyBuddy ML is an AI chatbot I designed, built, and tested to help busy graduate students review machine learning fundamentals in short study sessions. I created it using the design thinking process and a free no-code platform. This page shows how I went from a user problem to a working, tested tool, and it shares a template you can use to build your own.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="https://mizou.com/login-thread?ID=7xj9lkwefNBjBRFqCdWuTjxBgEV1gdXExmc8M8iipPc-152632" target="_blank" rel="noopener">Try StudyBuddy ML ↗</a>
+      <a class="btn btn-ghost" href="assets/studybuddy-template.pdf" target="_blank" rel="noopener">Download the template (PDF)</a>
+    </div>
+  </div>
+  <div class="thumbbox"><img src="assets/robot.png" alt="StudyBuddy ML robot mascot reading a book"></div>
+</div></header>
+
+<div class="wrap">
+  <div class="facts">
+    <div class="fact"><b>5</b><span>design thinking stages</span></div>
+    <div class="fact"><b>10</b><span>planned test scenarios</span></div>
+    <div class="fact"><b>2</b><span>failures caught &amp; fixed</span></div>
+    <div class="fact"><b>10/10</b><span>tests passing after revision</span></div>
+  </div>
+</div>
+
+<div class="wrap layout">
+  <aside class="toc">
+    <a href="#description">Description</a>
+    <a href="#objective">Objective</a>
+    <a href="#process">Process</a>
+    <a href="#results">Test Results</a>
+    <a href="#tools">Tools</a>
+    <a href="#download">Download</a>
+    <a href="#value">Value Proposition</a>
+    <a href="#references">References</a>
+  </aside>
+
+  <main class="content">
+    <section id="description">
+      <h2>Description</h2>
+      <p>StudyBuddy ML works in two modes:</p>
+      <ul>
+        <li><strong>Explain mode:</strong> gives a plain-language explanation in under 150 words, an everyday analogy, and one check question.</li>
+        <li><strong>Quiz mode:</strong> asks one multiple-choice question at a time, explains why each answer is right or wrong, and keeps score.</li>
+      </ul>
+      <div class="callout">It also includes guardrails. It refuses to answer graded quiz questions, never invents sources, stays on topic, and reminds users not to share personal information.</div>
+      <figure>
+        <img src="assets/explain.png" alt="StudyBuddy ML explaining large language models with a parrot analogy">
+        <figcaption>Figure 1. In Explain mode, StudyBuddy ML gives a short, plain-language explanation with an everyday analogy.</figcaption>
+      </figure>
+      <div class="gallery">
+        <figure>
+          <img src="assets/quiz-question.png" alt="StudyBuddy ML asking a multiple-choice question about convolutional layers">
+          <figcaption>Figure 2. In Quiz mode, StudyBuddy ML asks one multiple-choice question at a time and waits for the student’s answer.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/quiz-feedback.png" alt="StudyBuddy ML explaining why the chosen answer is wrong">
+          <figcaption>Figure 3. For a wrong answer, it names the student’s choice, explains why it is wrong, then explains the correct answer. This behavior was added after testing.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="objective">
+      <h2>Objective</h2>
+      <p>I created this artifact to apply design thinking to a real problem and to learn how to build, test, and improve a generative AI tool. I also wanted to practice responsible AI: designing rules that protect users and academic integrity, then proving through testing that those rules work.</p>
+    </section>
+
+    <section id="process">
+      <h2>Process</h2>
+      <p>I followed the five stages of design thinking:</p>
+      <ol class="steps">
+        <li><strong>Empathize.</strong> I identified the needs of working graduate students, including limited study time, new terms that are easy to confuse, and long chatbot answers that never check understanding. I am one of these users myself.</li>
+        <li><strong>Define.</strong> I wrote a problem statement: How might we help working graduate students review ML fundamentals in short sessions, so they understand concepts instead of just reading answers?</li>
+        <li><strong>Ideate.</strong> I compared three ideas: a concept explainer, a quiz coach, and a full course tutor. I chose a combined Explain and Quiz coach and rejected the full tutor because it risked academic integrity.</li>
+        <li><strong>Prototype.</strong> I wrote the bot’s instructions and rules, then built it in Mizou. I had to shorten my instructions from about 1,900 to 934 characters to fit the platform’s limit.</li>
+        <li><strong>Test and iterate.</strong> I ran 10 planned test scenarios, one for each rule. Eight passed on the first try. Two needed changes. I revised the rules, retested, and both passed.</li>
+      </ol>
+    </section>
+
+    <section id="results">
+      <h2>Test Results</h2>
+      <figure>
+        <img src="assets/test-results.png" alt="Table of 10 test scenarios: eight passed first time; tests 4 and 7 were partial and passed after revision">
+        <figcaption>Figure 4. Results of 10 planned test scenarios. Two tests initially failed; after revising the bot’s rules, both passed on retest.</figcaption>
+      </figure>
+    </section>
+
+    <section id="tools">
+      <h2>Tools and Technologies Used</h2>
+      <ul>
+        <li><strong>Mizou (free plan):</strong> no-code platform used to build, publish, and share the chatbot</li>
+        <li><strong>Prompt engineering:</strong> 934-character system instructions plus a 10-item rules list</li>
+        <li><strong>Design thinking framework:</strong> Empathize, Define, Ideate, Prototype, Test</li>
+        <li><strong>Scenario-based testing:</strong> 10 planned test cases with expected behavior and pass/fail results</li>
+        <li><strong>Generative AI assistance:</strong> Claude (Anthropic) to help draft the instructions, test plan, and documentation; Mizou’s built-in image generator for the bot’s pictures</li>
+        <li><strong>Microsoft Word:</strong> lab documentation and the downloadable template</li>
+      </ul>
+    </section>
+
+    <section id="download">
+      <h2>Build Your Own Guardrailed Study Chatbot</h2>
+      <div class="download">
+        <p>I turned what I learned into a free, reusable template. It includes my design steps, the exact instructions and rules I used, and the 10-test checklist. Anyone can adapt it to build and test their own AI study assistant.</p>
+        <a class="btn btn-primary" href="assets/studybuddy-template.pdf" target="_blank" rel="noopener">Download PDF</a>
+      </div>
+    </section>
+
+    <section id="value">
+      <h2>Value Proposition</h2>
+      <div class="vp">
+        <div>
+          <h3>Unique Value</h3>
+          <p>This artifact gives educators, training teams, and AI builders a ready-to-use blueprint for an AI study assistant that will not do students’ graded work. The free template includes copy-and-paste instructions that fit a 1,000-character limit, two rules proven to fix common bot failures, and a 10-scenario test checklist. With it, a team can build a guardrailed study bot on a free platform and verify its safety rules before any student uses it.</p>
+        </div>
+        <div>
+          <h3>Relevance</h3>
+          <p>Organizations adopting generative AI face the same risks this bot was designed to handle: wrong answers, invented sources, misuse, and privacy leaks. The test checklist turns those risks into concrete checks. In my own testing, it caught 2 of 10 rule failures before release, and both were fixed and verified. For any team rolling out an AI assistant, this is a simple, repeatable way to test before users find the problems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="references" class="refs">
+      <h2>References</h2>
+      <p>Indiana Wesleyan University. (2026). <em>AI lab: Guided activities</em> [Course material, AIML-500].</p>
+      <p>Mizou. (n.d.). <em>Mizou: AI chatbots for education</em> [Computer software]. <a href="https://mizou.com" target="_blank" rel="noopener">https://mizou.com</a></p>
+    </section>
+  </main>
+</div>
+
+<footer><div class="wrap">
+  <a href="index.html">← Back to portfolio</a>
+  <span>© 2026 Baavana Podugu</span>
+</div></footer>
+
+</body>
+</html>
