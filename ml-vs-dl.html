@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ML vs. Deep Learning Decision Guide | Baavana Podugu</title>
+<meta name="description" content="A practical guide for choosing between traditional machine learning and deep learning, based on two real-world case studies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="index.html">Baavana Podugu<span>.</span></a>
+  <ul>
+    <li><a class="link" href="index.html">Home</a></li>
+    <li><a class="link" href="index.html#skills">Skills</a></li>
+    <li><a class="link active" href="index.html#artifacts">Artifacts</a></li>
+  </ul>
+</div></nav>
+
+<header class="art-hero"><div class="wrap">
+  <div>
+    <span class="eyebrow">Artifact 2 · Technical Analysis</span>
+    <h1>Machine Learning or Deep Learning? A Decision Guide Built from Two Case Studies</h1>
+    <p class="lead">Choosing the wrong AI approach wastes time, data, and money. I analyzed two real-world projects, one that called for traditional machine learning and one that called for deep learning, and turned what I learned into a one-page guide that any team can use before starting an AI project.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="assets/ml-vs-dl-decision-guide.pdf" target="_blank" rel="noopener">Download the decision guide (PDF)</a>
+      <a class="btn btn-ghost" href="assets/ml-vs-dl-report.pdf" target="_blank" rel="noopener">Read the full report (PDF)</a>
+    </div>
+  </div>
+  <div class="thumbbox"><img src="assets/ml-dl-thumb.png" alt="Illustration comparing machine learning with hand-chosen features and deep learning with layered neural networks"></div>
+</div></header>
+
+<div class="wrap">
+  <div class="facts">
+    <div class="fact"><b>2</b><span>real-world case studies</span></div>
+    <div class="fact"><b>5</b><span>decision questions</span></div>
+    <div class="fact"><b>93.3%</b><span>AUC in the churn case</span></div>
+    <div class="fact"><b>1 page</b><span>reusable guide</span></div>
+  </div>
+</div>
+
+<div class="wrap layout">
+  <aside class="toc">
+    <a href="#description">Description</a>
+    <a href="#objective">Objective</a>
+    <a href="#process">Process</a>
+    <a href="#findings">Key Findings</a>
+    <a href="#evidence">The Deliverables</a>
+    <a href="#tools">Tools</a>
+    <a href="#value">Value Proposition</a>
+    <a href="#references">References</a>
+  </aside>
+
+  <main class="content">
+    <section id="description">
+      <h2>Description</h2>
+      <p>This artifact has two parts:</p>
+      <ul>
+        <li><strong>A one-page decision guide</strong> with five questions that point a team toward traditional machine learning or deep learning, a rule of thumb, and two real examples.</li>
+        <li><strong>A full analysis report</strong> that compares the two approaches using published case studies, explaining why each approach fits its problem and why the other one does not.</li>
+      </ul>
+      <div class="callout">The core idea: the problem decides the method. Structured data with known factors usually calls for traditional machine learning. Raw images, audio, or text with patterns too complex to define by hand usually call for deep learning.</div>
+    </section>
+
+    <section id="objective">
+      <h2>Objective</h2>
+      <p>I created this artifact to learn how to tell machine learning and deep learning apart in practice, not just in definitions. My goal was to be able to look at a business problem and recommend the right approach with clear reasons. I also wanted to turn that analysis into a practical tool for people who are planning AI projects.</p>
+    </section>
+
+    <section id="process">
+      <h2>Process</h2>
+      <ol class="steps">
+        <li><strong>Selected two examples.</strong> From the course lesson, I chose customer churn prediction as a traditional machine learning example and image recognition with a convolutional neural network (CNN) as a deep learning example.</li>
+        <li><strong>Found real-world applications.</strong> I matched each example to a peer-reviewed study: a telecom company’s churn prediction system (Ahmad et al., 2019) and Google’s deep learning model for detecting diabetic eye disease in retinal photos (Gulshan et al., 2016).</li>
+        <li><strong>Analyzed suitability.</strong> For each case, I explained why its approach fits the problem and why the other approach would not, looking at data type, feature design, data and computing needs, and explainability.</li>
+        <li><strong>Verified the facts.</strong> I checked the key figures against the published studies and revised one claim that went further than the source supported.</li>
+        <li><strong>Turned the analysis into a tool.</strong> I condensed the findings into five decision questions and a rule of thumb, designed as a one-page guide that a team can use at the start of a project.</li>
+      </ol>
+    </section>
+
+    <section id="findings">
+      <h2>Key Findings</h2>
+      <div class="vp">
+        <div>
+          <h3>Customer churn → Machine learning</h3>
+          <p>The data is structured, analysts already know which factors drive churn, and managers need to understand why a customer is at risk. Tree-based models handle all three well. In the telecom study, adding well-designed social network features improved results, and XGBoost reached an AUC of 93.3% (Ahmad et al., 2019). Deep learning would add cost and complexity without a clear gain, and it would be harder to explain.</p>
+        </div>
+        <div>
+          <h3>Retinal images → Deep learning</h3>
+          <p>The input is raw pixels, and the signs of disease are too subtle to describe as exact rules. A CNN trained on about 128,000 graded retinal photos detected referable diabetic retinopathy with accuracy comparable to ophthalmologists (Gulshan et al., 2016). Traditional machine learning would depend on hand-measured features that are slow to create and miss subtle patterns.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="evidence">
+      <h2>The Deliverables</h2>
+      <div class="gallery">
+        <figure>
+          <a href="assets/ml-vs-dl-decision-guide.pdf" target="_blank" rel="noopener"><img src="assets/decision-guide.png" alt="One-page decision guide with five questions for choosing machine learning or deep learning"></a>
+          <figcaption>Figure 1. The one-page decision guide. Select the image to open the PDF.</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/ml-vs-dl-report.pdf" target="_blank" rel="noopener"><img src="assets/report-page.png" alt="First page of the machine learning versus deep learning analysis report"></a>
+          <figcaption>Figure 2. The first page of the full analysis report. Select the image to open the PDF.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="tools">
+      <h2>Tools and Technologies Used</h2>
+      <ul>
+        <li><strong>Machine learning concepts:</strong> feature engineering, tree-based models (decision trees, random forests, XGBoost), and evaluation with AUC</li>
+        <li><strong>Deep learning concepts:</strong> convolutional neural networks (CNNs) for image recognition</li>
+        <li><strong>Research:</strong> peer-reviewed journal articles accessed through their DOIs</li>
+        <li><strong>Generative AI assistance:</strong> Claude (Anthropic) to help identify case studies, organize the analysis, and draft and design the guide</li>
+        <li><strong>Microsoft Word and HTML/CSS:</strong> the APA-formatted report and the one-page guide</li>
+      </ul>
+    </section>
+
+    <section id="value">
+      <h2>Value Proposition</h2>
+      <div class="vp">
+        <div>
+          <h3>Unique Value</h3>
+          <p>This guide helps project leads, product managers, and developers choose between traditional machine learning and deep learning in minutes, before they commit time and budget. Five yes-or-no questions point to the right starting approach, and two real case studies show what each choice looks like in practice. It replaces a vague debate with a clear, repeatable check.</p>
+        </div>
+        <div>
+          <h3>Relevance</h3>
+          <p>Many teams assume the most advanced model is the best one. In practice, deep learning needs much more data, computing power, and effort to explain, and it often adds little on structured business data. Choosing the simplest approach that solves the problem saves cost and makes results easier to trust. This guide helps teams make that choice deliberately.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="references" class="refs">
+      <h2>References</h2>
+      <p>Ahmad, A. K., Jafar, A., &amp; Aljoumaa, K. (2019). Customer churn prediction in telecom using machine learning in big data platform. <em>Journal of Big Data, 6</em>(1), Article 28. <a href="https://doi.org/10.1186/s40537-019-0191-6" target="_blank" rel="noopener">https://doi.org/10.1186/s40537-019-0191-6</a></p>
+      <p>Gulshan, V., Peng, L., Coram, M., Stumpe, M. C., Wu, D., Narayanaswamy, A., Venugopalan, S., Widner, K., Madams, T., Cuadros, J., Kim, R., Raman, R., Nelson, P. C., Mega, J. L., &amp; Webster, D. R. (2016). Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs. <em>JAMA, 316</em>(22), 2402–2410. <a href="https://doi.org/10.1001/jama.2016.17216" target="_blank" rel="noopener">https://doi.org/10.1001/jama.2016.17216</a></p>
+    </section>
+  </main>
+</div>
+
+<footer><div class="wrap">
+  <a href="index.html#artifacts">← Back to artifacts</a>
+  <span>© 2026 Baavana Podugu</span>
+</div></footer>
+
+</body>
+</html>
